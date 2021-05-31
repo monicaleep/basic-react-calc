@@ -5,7 +5,7 @@ const NumberInput = (props) => {
     return (
         <input type="number"
                     name="num1"
-                    placeholder="Enter your first number"
+                    placeholder="Enter your number"
                     value={props.value}
                     onChange={props.handleChange}
                     />

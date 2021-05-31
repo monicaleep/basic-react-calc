@@ -1,6 +1,14 @@
 import React  from 'react'
 
 
-export default Operator = (props) => {
-    
+const Operator = (props) => {
+    switch (props.type){
+        case "add":
+            return <span>+</span> 
+        default:
+            return <span></span>
+
+    }
 }
+
+export default Operator
