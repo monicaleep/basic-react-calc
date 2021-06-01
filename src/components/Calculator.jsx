@@ -9,6 +9,7 @@ const Calculator = () => {
     const [result, setResult] = useState(0)
     const [color, setColor] = useState('')
 
+    // Generate random RGB value for background
     useEffect(()=>{
       const red = Math.random() * 255
       const green = Math.random() * 255
