@@ -17,6 +17,12 @@ const Calculator = () => {
       setColor(`rgb(${red},${green},${blue})`)
     },[])
 
+    const handleClear = () =>{
+      setNum1()
+      setNum2()
+      setResult()
+    }
+
     
 
     const makeResult = () =>{
@@ -34,6 +40,7 @@ const Calculator = () => {
               <button onClick={() =>makeResult()}>=</button>
               <Output value={result}/>
             </div>
+            <button onClick={handleClear}>Clear</button>
           </div>
           
         )
